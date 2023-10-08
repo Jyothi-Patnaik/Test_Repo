@@ -27,8 +27,8 @@ public class Assign3 {
 	public void login() {
 		
 		
-		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("soniya@gmail.com");
-		driver.findElement(By.xpath("//input[@id='passwd']")).sendKeys("soni@123");
+		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("jyothi@gmail.com");
+		driver.findElement(By.xpath("//input[@id='passwd']")).sendKeys("Jyothi@123");
 		driver.findElement(By.xpath("//button[@id='SubmitLogin']")).click();
 
 	}
