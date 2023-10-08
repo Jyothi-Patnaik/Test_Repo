@@ -1,4 +1,4 @@
-package assign_1;
+package Assignments;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

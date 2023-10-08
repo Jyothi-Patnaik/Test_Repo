@@ -1,4 +1,4 @@
-package assign_1;
+package Assignments;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
