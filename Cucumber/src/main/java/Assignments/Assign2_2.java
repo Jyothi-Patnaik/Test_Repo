@@ -17,8 +17,10 @@ public class Assign2_2 {
 		driver.findElement(By.name("cusid")).sendKeys("1234679");
 		driver.findElement(By.name("submit")).click();
 		Alert alert = driver.switchTo().alert();
+		System.out.println(alert.getText());
 		alert.accept();
 		Thread.sleep(3000);
+		System.out.println(alert.getText());
 		alert.accept();
 		driver.quit();
 	}

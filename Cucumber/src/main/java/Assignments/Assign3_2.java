@@ -1,5 +1,9 @@
 package Assignments;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,7 +14,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Assign3 {
+public class Assign3_2 {
 	
 	WebDriver driver;
 
@@ -25,14 +29,21 @@ public class Assign3 {
 			driver.get("https://demo.guru99.com/test/login.html");
 		}
 	@Test
-	public void login() {
-		
-		
-		WebElement email=driver.findElement(By.xpath("//input[@id='email']"));
-		email.sendKeys("jyothi@gmail.com");
+	public void login() throws IOException, InterruptedException {
+		 Properties properties = new Properties();
+	     FileInputStream fis = new FileInputStream("src/main/resources/data.properties");
+	     properties.load(fis);
 
-		WebElement password=driver.findElement(By.xpath("//input[@id='passwd']"));
-		password.sendKeys("Jyothi@123");
+	     // Read data from the properties file
+	     String email = properties.getProperty("email");
+	     String password = properties.getProperty("password");
+		
+		WebElement email1=driver.findElement(By.xpath("//input[@id='email']"));
+		email1.sendKeys(email);
+		WebElement password1=driver.findElement(By.xpath("//input[@id='passwd']"));
+		password1.sendKeys(password);
+		
+		Thread.sleep(2000);
 		WebElement login=driver.findElement(By.xpath("//button[@id='SubmitLogin']"));
 		login.click();
 

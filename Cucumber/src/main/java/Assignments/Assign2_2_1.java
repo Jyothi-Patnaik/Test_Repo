@@ -15,15 +15,16 @@ public class Assign2_2_1 {
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://demo.guru99.com/test/guru99home/");
-		JavascriptExecutor js =(JavascriptExecutor)driver;
-		WebElement ele = driver.findElement(By.id("a077aa5e"));
-		js.executeScript("arguments[0].scrollIntoView(true);", ele);
-		//driver.switchTo().frame("a077aa5e");
+		driver.switchTo().frame("a077aa5e");
+		WebElement ele = driver.findElement(By.xpath("/html[1]/body[1]/a[1]/img[1]"));
 		ele.click();
+	
+		
 		
 
-		
+
+	}	
 	}
 	
 	
-}
+

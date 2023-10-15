@@ -67,6 +67,7 @@ public class Assign3_3 {
 			monthName.selectByValue("OCTOBER");
 			WebElement year=driver.findElement(By.xpath("//select[@class='react-datepicker__year-select']"));
 			Select years = new Select(month);
+			
 			// Select an option by visible text
 			years.selectByValue("1998");
 			WebElement date=driver.findElement(By.xpath("//div[text()='31']"));
@@ -86,17 +87,12 @@ public class Assign3_3 {
 			city.sendKeys("Hyderabad");
 			
 			
-			
+		}	
 			
 			
 		}
 			
 			
-			
-		
-		
-
-	}
 //	@AfterMethod
 //	public void close() {
 //		driver.quit();
