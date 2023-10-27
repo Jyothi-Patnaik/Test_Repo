@@ -21,14 +21,14 @@ public class OpenApp {
 	
 	@SuppressWarnings("deprecation")
 	@BeforeTest
-	public static void invc() throws MalformedURLException, InterruptedException  {
+	public static void inlink() throws MalformedURLException, InterruptedException  {
 		
 		DesiredCapabilities cap = new DesiredCapabilities();
-		cap.setCapability("appiumVersion", "1.15.1");
-		cap.setCapability("deviceName", "vivo");
-		//cap.setCapability("udid", "emulator-5554");
+		cap.setCapability("appiumVersion", "v1.15.1");
+		//cap.setCapability("deviceName", "vivo");
+		cap.setCapability("deviceName", "emulator-5554");
 		cap.setCapability("platformName", "Android");
-		cap.setCapability("platformVersion", "13");
+		cap.setCapability("platformVersion", "11");
 		cap.setCapability("chromeoptions", ImmutableMap.of("w3c",false));
 		
 		cap.setCapability("app", "C:/Users/admin/Downloads/Inlink_test_20_06_23.apk");

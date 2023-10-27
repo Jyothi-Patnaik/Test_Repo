@@ -21,7 +21,6 @@ public class Assign2_2_2 {
 		String mainWindowHandle = driver.getWindowHandle();
 		 Set<String> windowHandles = driver.getWindowHandles();
 
-		    // Switch to the first child window
 		    for (String handle : windowHandles) {
 		        if (!handle.equals(mainWindowHandle)) {
 		            driver.switchTo().window(handle);

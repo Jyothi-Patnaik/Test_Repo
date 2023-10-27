@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-07T23:38:24 IST" name="Default suite" finished-at="2023-10-07T23:38:36 IST" duration-ms="12137">
+  <suite started-at="2023-10-21T11:32:35 IST" name="Default suite" finished-at="2023-10-21T11:32:43 IST" duration-ms="7458">
     <groups>
     </groups>
-    <test started-at="2023-10-07T23:38:24 IST" name="Default test" finished-at="2023-10-07T23:38:36 IST" duration-ms="12137">
-      <class name="Test.WindowOpen">
-        <test-method signature="window()[pri:0, instance:Test.WindowOpen@692f203f]" started-at="2023-10-07T23:38:24 IST" name="window" finished-at="2023-10-07T23:38:36 IST" duration-ms="12097" status="PASS">
+    <test started-at="2023-10-21T11:32:35 IST" name="Default test" finished-at="2023-10-21T11:32:43 IST" duration-ms="7458">
+      <class name="Test.Flip">
+        <test-method signature="flipOpen()[pri:0, instance:Test.Flip@4c583ecf]" started-at="2023-10-21T11:32:36 IST" name="flipOpen" finished-at="2023-10-21T11:32:43 IST" duration-ms="7416" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- window -->
-      </class> <!-- Test.WindowOpen -->
+        </test-method> <!-- flipOpen -->
+      </class> <!-- Test.Flip -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
