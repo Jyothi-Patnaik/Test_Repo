@@ -35,12 +35,12 @@ public class MyProfile_Details extends AppiumBaseClass{
 		
 		WebElement overViewSave = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.peoplelink.inlink:id/saveBtn")));
 		overViewSave.click();
-		
-		Utill.scrollUp(4, driver);
+		Thread.sleep(3000);
+		Utill.scrollUp(2, driver);
 		
 		//PersonalDetails
 		
-		WebElement editPersonalDetails = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.peoplelink.inlink:id/edit_personal_details_btn")));
+		WebElement editPersonalDetails = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout/android.widget.ImageView")));
 		editPersonalDetails.click();
 		
 //	    WebElement firstName = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.FrameLayout/android.widget.EditText")));
@@ -79,7 +79,7 @@ public class MyProfile_Details extends AppiumBaseClass{
 		searchCountry.sendKeys("India");
 		
 		WebElement selectCountry = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout")));
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		selectCountry.click();
 		
 		WebElement phno = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.peoplelink.inlink:id/phoneNumberET")));

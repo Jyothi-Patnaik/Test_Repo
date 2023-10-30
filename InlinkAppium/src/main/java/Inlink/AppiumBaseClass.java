@@ -50,10 +50,10 @@ public class AppiumBaseClass {
 	public static void login() throws InterruptedException {
 		Thread.sleep(10000);
 
-		driver.findElement(By.id("com.peoplelink.inlink:id/emailET")).sendKeys("meera@yopmail.com");
+		/*driver.findElement(By.id("com.peoplelink.inlink:id/emailET")).sendKeys("meera@yopmail.com");
 		driver.findElement(By.id("com.peoplelink.inlink:id/passwordET")).sendKeys("Inlink@123");
 		driver.findElement(By.id("com.peoplelink.inlink:id/text_input_end_icon")).click();
-		driver.findElement(By.id("com.peoplelink.inlink:id/loginBtn")).click();
+		driver.findElement(By.id("com.peoplelink.inlink:id/loginBtn")).click();*/
 		//driver.findElement(By.id("com.peoplelink.inlink:id/create_post")).click();
 		
 	}
