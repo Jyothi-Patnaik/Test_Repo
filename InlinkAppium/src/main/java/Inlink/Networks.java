@@ -82,6 +82,11 @@ public class Networks extends AppiumBaseClass {
 	 
 	 WebElement pendingBtn = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView"));
 	 pendingBtn.click();
+//	 
+//	 WebElement pendingBtn = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView"));
+//	 pendingBtn.click();
+	 
+	 
 	
 	 
 	 	
